@@ -24,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         val username = findViewById<EditText>(R.id.username)
         val password = findViewById<EditText>(R.id.password)
         val login = findViewById<Button>(R.id.Button_login)
-        val url = "http://api.plos.org/search?q=title:DNA"
+        val url = "http://127.0.0.1:8000/api/auth/login"
         val jsonobj = JSONObject()
 
             login.setOnClickListener {
